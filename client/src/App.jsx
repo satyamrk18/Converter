@@ -1,9 +1,12 @@
-const App = ()=>
-{
-    return(
-        <div>
-            <h1 className="text-red-400">Hello Electron</h1>
-        </div>
-    )
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./views/Home.jsx";
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 export default App;
